@@ -1,0 +1,82 @@
+.wrapper {
+    background: linear-gradient(50deg, #330000, #FF9A00) !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: url("../../../assets/bg/001.png"); */
+}
+
+.wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    min-width: 50%;
+    min-height: 100vh;
+}
+
+.auth-content {
+    position: relative;
+    width: 390px;
+    padding: 8px;
+    z-index: 5;
+}
+
+.auth-content2 {
+    position: relative;
+    width: 600px;
+    padding: 10px;
+    z-index: 5;
+}
+
+.auth-content .card .card-block,
+.auth-content .card .card-body {
+    padding: 30px 25px;
+    border-radius: none;
+}
+
+.auth-content .form-control {
+    background: #eeeded;
+    border-radius: 0px;
+    min-height: 37px;
+    line-height: 37px;
+    font-size: 15px;
+    padding: 10px 15px;
+    height: 10px;
+}
+
+input.invalid {
+    background-color: #ffdddd;
+}
+
+p.text-muted {
+    font-size: 13px;
+}
+
+.border-color {
+    border: 1px solid #ff9a00;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg {
+   background: #eeeded;
+}
+.zero{
+    border-radius: 0px;
+}
+.bd{
+    background: rgba(255, 255, 255, 0.35);
+}
+.change:hover{
+color: #fff;
+}

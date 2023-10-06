@@ -1,0 +1,9 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .bg{
+    background-color: #ff9a00;
+  }
+  .aqua-gradient {
+    background: linear-gradient(40deg, #330000, #FF9A00) !important;
+  }

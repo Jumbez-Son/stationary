@@ -1,0 +1,53 @@
+<!-- <a mat-raised-button routerLink="" color="primary">Login here</a> -->
+<div class="wrapper">
+    <div class="auth-content ">
+        <mat-card class="shadow-lg bd" style="border-radius: 15px;">
+            <div class="text-center container p-2 bg" style="border-top-right-radius: 15px; border-top-left-radius: 15px;">
+                <img src="../../../assets/logo/login.png" alt="" style="width: 55%;">
+            </div>
+            <span class="display-6 text-center">Login</span>
+            <mat-card-content>
+                <form (ngSubmit)="onSubmit()">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username" [(ngModel)]="username"
+                            name="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+
+                            </div>
+                            <div class="col-md-6 text-end">
+                                <a href="">
+                                    <span class="text-muted">Forgot password ?</span>
+                                </a>
+                            </div>
+                        </div>
+                        <input type="{{showPassword ? 'text' : 'password'}}" class="form-control"
+                            id="password" [(ngModel)]="password" name="password" required>
+                    </div>
+                    <div class="mb-3 form-switch">
+                        <input type="checkbox" (change)="showPassword = !showPassword" class="form-check-input"
+                            id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1"> Show password</label>
+                        
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" mat-raised-button color="" [disabled]="!(username && password)"
+                            class="w-100 zero"><mat-icon>login</mat-icon>Login</button>
+                    </div>
+
+                </form>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <a routerLink="account">
+                            <span class="text-muted">Sign Up</span>
+                        </a>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

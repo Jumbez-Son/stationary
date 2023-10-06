@@ -1,0 +1,16 @@
+<mat-toolbar class="aqua-gradient text-white navbar fixed-top shadow">
+  <mat-toolbar-row>
+    <img src="../../../assets/logo/judy.png" class="bd-placeholder-img" width="4%">
+    <span class="fw-light"></span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu" class="my-3">
+      <div class="example-menu p-0">
+        <button routerLink="loginPg" class="example-menu-item" mat-menu-item><i class="fas fa-log fa-spin"></i> Login</button>
+        <!-- <button routerLink="" class="example-menu-item" mat-menu-item><mat-icon>logout</mat-icon> Sign out</button> -->
+      </div>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>
